@@ -2,4 +2,24 @@
 title: "About"
 ---
 
-About this site
+## About the Author
+
+This project was developed by **Omar Khater** as part of Milestone 4 for data science coursework in quantitative reasoning and data visualization.
+
+## Project Scope & Objectives
+
+The broader goal of this study is to examine testing trends and adverse analytical findings (AAFs) across competitive sports. By linking anti-doping testing frequencies with athletic physical profiles and sport-specific demands, we aim to better understand:
+
+- How testing volume and positivity rates vary across disciplines.
+- Where physical demands create strong performance incentives.
+- How anti-doping policies and detection technologies have developed historically.
+
+## Data Sources
+
+- **Olympic Athlete Records**: Historical dataset covering 120 years of Olympic competitions (271,116 records), sourced via [TidyTuesday](https://github.com/rfordatascience/tidytuesday/tree/master/data/2021/2021-07-27).
+- **Anti-Doping Statistics**: Annual testing figures and adverse analytical finding reports from the [World Anti-Doping Agency (WADA)](https://www.wada-ama.org/en/resources/anti-doping-stats) and the [U.S. Anti-Doping Agency (USADA)](https://www.usada.org/news/testing-data/).
+
+## Repository
+
+The source code and data pipeline for this Quarto website can be found on GitHub: [okhatter28/milestone-4](https://github.com/okhatter28/milestone-4).
+

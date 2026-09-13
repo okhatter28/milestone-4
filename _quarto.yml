@@ -8,14 +8,19 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/okhatter28/milestone-4
+  page-footer:
+    left: "© 2026 Omar Khater"
+    right: "Built with Quarto & GitHub Pages"
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
     toc: true
+    smooth-scroll: true
 
 
 
