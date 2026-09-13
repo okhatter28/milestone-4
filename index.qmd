@@ -1,37 +1,25 @@
 ---
-title: "Spotify Songs & Genre Danceability"
+title: "Performance Enhancement in Sports: Anti-Doping Testing Trends"
+author: "Omar Khater"
 ---
 
-This project explores audio characteristics across thousands of songs on Spotify.
+## Project Overview
 
-```{r}
-#| label: spotify-danceability-plot
-#| echo: false
-#| message: false
-#| warning: false
+This project investigates patterns in athletic performance enhancement and doping through anti-doping testing data. Using testing reports from organizations such as the World Anti-Doping Agency (WADA) and the U.S. Anti-Doping Agency (USADA), I plan to analyze how testing volumes and adverse analytical findings differ across sports and how these patterns have evolved over time.
 
-library(tidyverse)
+## Key Variables
 
-# Download Spotify songs dataset (32,833 observations)
-spotify <- read_csv(
-  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv",
-  show_col_types = FALSE
-)
+Key variables of interest for this analysis include:
 
-# Plot distribution of danceability by playlist genre
-spotify |>
-  filter(!is.na(playlist_genre)) |>
-  ggplot(aes(x = fct_reorder(playlist_genre, danceability, .fun = median), y = danceability, fill = playlist_genre)) +
-  geom_boxplot(alpha = 0.7, show.legend = FALSE, outlier.alpha = 0.1) +
-  coord_flip() +
-  labs(
-    title = "Danceability Across Music Genres on Spotify",
-    subtitle = "Based on 32,833 tracks from Spotify playlists",
-    x = "Playlist Genre",
-    y = "Danceability Score (0 to 1)",
-    caption = "Source: Spotify via TidyTuesday"
-  ) +
-  theme_minimal(base_size = 12)
-```
+- **sport**: The athletic discipline (e.g., athletics, cycling, weightlifting, aquatics) to compare detection and testing rates across sports.
+- **year**: The testing year, allowing analysis of trends over time in sample volume and positivity rates.
+- **test_type**: Whether testing was conducted in-competition or out-of-competition.
+- **sample_type**: Biological sample collected (urine vs. blood), which relates to the detection window for different substance classes.
+- **adverse_finding**: Indicator of an adverse analytical finding (positive test result), used to calculate positivity rates.
 
-The graphic above is built from **32,833 observations** from Spotify playlists. It compares the distribution of danceability scores across six playlist genres, highlighting that Latin and Rap tracks have the highest median danceability, whereas Rock displays the lowest median danceability.
+## Exploratory Graphic
+
+The following visualization examines variation in athlete physical profiles across selected major sports based on historical Olympic athlete data (271,116 total records, with 95,256 plotted observations across eight sports), establishing baseline physical demands across sports subject to anti-doping testing.
+
+![](figures/olympic_profiles.png)
+
