@@ -4,34 +4,62 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "This project was developed by Omar Khater as part of Milestone 4 for data science coursework in quantitative reasoning and data visualization."
+  },
+  {
+    "objectID": "about.html#about-the-author",
+    "href": "about.html#about-the-author",
+    "title": "About",
+    "section": "",
+    "text": "This project was developed by Omar Khater as part of Milestone 4 for data science coursework in quantitative reasoning and data visualization."
+  },
+  {
+    "objectID": "about.html#project-scope-objectives",
+    "href": "about.html#project-scope-objectives",
+    "title": "About",
+    "section": "Project Scope & Objectives",
+    "text": "Project Scope & Objectives\nThe broader goal of this study is to examine testing trends and adverse analytical findings (AAFs) across competitive sports. By linking anti-doping testing frequencies with athletic physical profiles and sport-specific demands, we aim to better understand:\n\nHow testing volume and positivity rates vary across disciplines.\nWhere physical demands create strong performance incentives.\nHow anti-doping policies and detection technologies have developed historically."
+  },
+  {
+    "objectID": "about.html#data-sources",
+    "href": "about.html#data-sources",
+    "title": "About",
+    "section": "Data Sources",
+    "text": "Data Sources\n\nOlympic Athlete Records: Historical dataset covering 120 years of Olympic competitions (271,116 records), sourced via TidyTuesday.\nAnti-Doping Statistics: Annual testing figures and adverse analytical finding reports from the World Anti-Doping Agency (WADA) and the U.S. Anti-Doping Agency (USADA)."
+  },
+  {
+    "objectID": "about.html#repository",
+    "href": "about.html#repository",
+    "title": "About",
+    "section": "Repository",
+    "text": "Repository\nThe source code and data pipeline for this Quarto website can be found on GitHub: okhatter28/milestone-4."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Performance Enhancement in Sports: Anti-Doping Testing Trends",
     "section": "",
-    "text": "This project investigates patterns in athletic performance enhancement and doping through anti-doping testing data. Using testing reports from organizations such as the World Anti-Doping Agency (WADA) and the U.S. Anti-Doping Agency (USADA), I plan to analyze how testing volumes and adverse analytical findings differ across sports and how these patterns have evolved over time."
+    "text": "NoteProject Milestone\n\n\n\nThis study investigates how anti-doping testing strategies and adverse analytical findings (AAFs) intersect with the physical demands and incentives across sports. The graphic below analyzes 95,256 athlete records (from 271,116 historical entries) to map baseline physiological demands across eight major disciplines."
   },
   {
     "objectID": "index.html#project-overview",
     "href": "index.html#project-overview",
     "title": "Performance Enhancement in Sports: Anti-Doping Testing Trends",
-    "section": "",
-    "text": "This project investigates patterns in athletic performance enhancement and doping through anti-doping testing data. Using testing reports from organizations such as the World Anti-Doping Agency (WADA) and the U.S. Anti-Doping Agency (USADA), I plan to analyze how testing volumes and adverse analytical findings differ across sports and how these patterns have evolved over time."
+    "section": "Project Overview",
+    "text": "Project Overview\nPerformance enhancement in competitive athletics represents a complex intersection of physiology, pharmacology, and regulatory oversight. Using testing reports from organizations such as the World Anti-Doping Agency (WADA) and the U.S. Anti-Doping Agency (USADA), this project analyzes how sample volumes, testing protocols, and adverse analytical findings differ across sports and how these dynamics have evolved over recent decades.\nUnderstanding anti-doping data requires understanding the athletes themselves: what physical traits and mechanical demands define each discipline, and what incentives might drive athletes toward specific classes of prohibited substances?"
   },
   {
-    "objectID": "index.html#key-variables",
-    "href": "index.html#key-variables",
+    "objectID": "index.html#key-analytical-variables",
+    "href": "index.html#key-analytical-variables",
     "title": "Performance Enhancement in Sports: Anti-Doping Testing Trends",
-    "section": "Key Variables",
-    "text": "Key Variables\nKey variables of interest for this analysis include:\n\nsport: The athletic discipline (e.g., athletics, cycling, weightlifting, aquatics) to compare detection and testing rates across sports.\nyear: The testing year, allowing analysis of trends over time in sample volume and positivity rates.\ntest_type: Whether testing was conducted in-competition or out-of-competition.\nsample_type: Biological sample collected (urine vs. blood), which relates to the detection window for different substance classes.\nadverse_finding: Indicator of an adverse analytical finding (positive test result), used to calculate positivity rates."
+    "section": "Key Analytical Variables",
+    "text": "Key Analytical Variables\nTo evaluate testing regimes and detection rates, our analysis focuses on five primary dimensions:\n\n\n\n\n\n\n\n\nVariable\nDescription\nAnalytical Purpose\n\n\n\n\nsport\nAthletic discipline (e.g., athletics, cycling, weightlifting, aquatics)\nCompares baseline physiology, testing volume, and positivity rates across sports\n\n\nyear\nTesting and competition year\nIdentifies multi-year trends, policy shifts, and improvements in detection sensitivity\n\n\ntest_type\nIn-competition vs. out-of-competition testing\nEvaluates detection timing and unannounced surveillance effectiveness\n\n\nsample_type\nBiological matrix collected (urine vs. blood)\nAccounts for differences in detection windows across substance classes\n\n\nadverse_finding\nBinary indicator of an adverse analytical finding (AAF)\nQuantifies raw violation counts and calculated positivity percentages"
   },
   {
-    "objectID": "index.html#exploratory-graphic",
-    "href": "index.html#exploratory-graphic",
+    "objectID": "index.html#exploratory-graphic-olympic-body-profiles",
+    "href": "index.html#exploratory-graphic-olympic-body-profiles",
     "title": "Performance Enhancement in Sports: Anti-Doping Testing Trends",
-    "section": "Exploratory Graphic",
-    "text": "Exploratory Graphic\nThe following visualization examines variation in athlete physical profiles across selected major sports based on historical Olympic athlete data (271,116 total records, with 95,256 plotted observations across eight sports), establishing baseline physical demands across sports subject to anti-doping testing."
+    "section": "Exploratory Graphic: Olympic Body Profiles",
+    "text": "Exploratory Graphic: Olympic Body Profiles\nTo understand the physiological baselines of elite competitors, the visualization below plots height versus weight for eight major Olympic disciplines. The gold cross markers highlight the median athlete in each discipline.\n\n\nDataset Summary\nThe visualization draws on complete height and weight records from the historical Olympic dataset:\n\n\n\n\n\n\n\n\nSport\nPlotted Observations\nPrimary Physical Profile\n\n\n\n\nAthletics\n32,568\nHigh variance (sprinters vs. distance vs. throwers)\n\n\nSwimming\n18,796\nTall, lean, high upper-body leverage\n\n\nGymnastics\n18,326\nCompact, low body mass, high strength-to-weight ratio\n\n\nCycling\n7,819\nTightly clustered, optimized aerobic power-to-weight\n\n\nRowing\n7,794\nHigh stature, substantial lean mass for lever power\n\n\nBasketball\n3,675\nExtreme height specialization\n\n\nVolleyball\n3,277\nTall stature with lean jumping physique\n\n\nWeightlifting\n3,001\nMaximum strength and leverage across weight classes\n\n\nTotal Plotted\n95,256\nDrawn from 271,116 total athlete records\n\n\n\n\n\nKey Takeaways & Anti-Doping Implications\n\nBiomechanical Specialization: Each sport clusters in a distinct region of physical trait space. Gymnastics demands a compact center of gravity, while basketball and volleyball select for extreme stature.\nDispersion Reflects Sub-disciplines: Athletics exhibits the largest scatter because track and field spans contrasting physiological extremes—from distance runners requiring low mass to throwers relying on maximum inertia.\nIncentive Alignment for Performance Enhancement:\n\nDisciplines requiring raw power and explosive leverage (e.g., weightlifting and sprinting) historically present higher risks for anabolic agents.\nAerobic-demanding endurance sports (e.g., cycling, rowing, distance running) present risks centered on oxygen-transport enhancement, such as erythropoietin (EPO) and blood manipulation."
   }
 ]

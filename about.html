@@ -73,6 +73,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -104,6 +105,13 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/okhatter28/milestone-4"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -114,8 +122,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about-the-author" id="toc-about-the-author" class="nav-link active" data-scroll-target="#about-the-author">About the Author</a></li>
+  <li><a href="#project-scope-objectives" id="toc-project-scope-objectives" class="nav-link" data-scroll-target="#project-scope-objectives">Project Scope &amp; Objectives</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
+  <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -139,9 +156,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<section id="about-the-author" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-author">About the Author</h2>
+<p>This project was developed by <strong>Omar Khater</strong> as part of Milestone 4 for data science coursework in quantitative reasoning and data visualization.</p>
+</section>
+<section id="project-scope-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="project-scope-objectives">Project Scope &amp; Objectives</h2>
+<p>The broader goal of this study is to examine testing trends and adverse analytical findings (AAFs) across competitive sports. By linking anti-doping testing frequencies with athletic physical profiles and sport-specific demands, we aim to better understand:</p>
+<ul>
+<li>How testing volume and positivity rates vary across disciplines.</li>
+<li>Where physical demands create strong performance incentives.</li>
+<li>How anti-doping policies and detection technologies have developed historically.</li>
+</ul>
+</section>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<ul>
+<li><strong>Olympic Athlete Records</strong>: Historical dataset covering 120 years of Olympic competitions (271,116 records), sourced via <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2021/2021-07-27">TidyTuesday</a>.</li>
+<li><strong>Anti-Doping Statistics</strong>: Annual testing figures and adverse analytical finding reports from the <a href="https://www.wada-ama.org/en/resources/anti-doping-stats">World Anti-Doping Agency (WADA)</a> and the <a href="https://www.usada.org/news/testing-data/">U.S. Anti-Doping Agency (USADA)</a>.</li>
+</ul>
+</section>
+<section id="repository" class="level2">
+<h2 class="anchored" data-anchor-id="repository">Repository</h2>
+<p>The source code and data pipeline for this Quarto website can be found on GitHub: <a href="https://github.com/okhatter28/milestone-4">okhatter28/milestone-4</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -217,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/okhatter28\.github\.io\/milestone-4\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -545,8 +585,22 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Omar Khater</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with Quarto &amp; GitHub Pages</p>
+</div>
+  </div>
+</footer>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
