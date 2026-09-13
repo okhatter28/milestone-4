@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Performance Enhancement in Sports: Anti-Doping Testing Trends",
+    "section": "",
+    "text": "This project investigates patterns in athletic performance enhancement and doping through anti-doping testing data. Using testing reports from organizations such as the World Anti-Doping Agency (WADA) and the U.S. Anti-Doping Agency (USADA), I plan to analyze how testing volumes and adverse analytical findings differ across sports and how these patterns have evolved over time."
+  },
+  {
+    "objectID": "index.html#project-overview",
+    "href": "index.html#project-overview",
+    "title": "Performance Enhancement in Sports: Anti-Doping Testing Trends",
+    "section": "",
+    "text": "This project investigates patterns in athletic performance enhancement and doping through anti-doping testing data. Using testing reports from organizations such as the World Anti-Doping Agency (WADA) and the U.S. Anti-Doping Agency (USADA), I plan to analyze how testing volumes and adverse analytical findings differ across sports and how these patterns have evolved over time."
+  },
+  {
+    "objectID": "index.html#key-variables",
+    "href": "index.html#key-variables",
+    "title": "Performance Enhancement in Sports: Anti-Doping Testing Trends",
+    "section": "Key Variables",
+    "text": "Key Variables\nKey variables of interest for this analysis include:\n\nsport: The athletic discipline (e.g., athletics, cycling, weightlifting, aquatics) to compare detection and testing rates across sports.\nyear: The testing year, allowing analysis of trends over time in sample volume and positivity rates.\ntest_type: Whether testing was conducted in-competition or out-of-competition.\nsample_type: Biological sample collected (urine vs. blood), which relates to the detection window for different substance classes.\nadverse_finding: Indicator of an adverse analytical finding (positive test result), used to calculate positivity rates."
+  },
+  {
+    "objectID": "index.html#exploratory-graphic",
+    "href": "index.html#exploratory-graphic",
+    "title": "Performance Enhancement in Sports: Anti-Doping Testing Trends",
+    "section": "Exploratory Graphic",
+    "text": "Exploratory Graphic\nThe following visualization examines variation in athlete physical profiles across selected major sports based on historical Olympic athlete data (271,116 total records, with 95,256 plotted observations across eight sports), establishing baseline physical demands across sports subject to anti-doping testing."
+  }
+]
