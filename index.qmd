@@ -1,0 +1,37 @@
+---
+title: "Spotify Songs & Genre Danceability"
+---
+
+This project explores audio characteristics across thousands of songs on Spotify.
+
+```{r}
+#| label: spotify-danceability-plot
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+
+# Download Spotify songs dataset (32,833 observations)
+spotify <- read_csv(
+  "https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv",
+  show_col_types = FALSE
+)
+
+# Plot distribution of danceability by playlist genre
+spotify |>
+  filter(!is.na(playlist_genre)) |>
+  ggplot(aes(x = fct_reorder(playlist_genre, danceability, .fun = median), y = danceability, fill = playlist_genre)) +
+  geom_boxplot(alpha = 0.7, show.legend = FALSE, outlier.alpha = 0.1) +
+  coord_flip() +
+  labs(
+    title = "Danceability Across Music Genres on Spotify",
+    subtitle = "Based on 32,833 tracks from Spotify playlists",
+    x = "Playlist Genre",
+    y = "Danceability Score (0 to 1)",
+    caption = "Source: Spotify via TidyTuesday"
+  ) +
+  theme_minimal(base_size = 12)
+```
+
+The graphic above is built from **32,833 observations** from Spotify playlists. It compares the distribution of danceability scores across six playlist genres, highlighting that Latin and Rap tracks have the highest median danceability, whereas Rock displays the lowest median danceability.
